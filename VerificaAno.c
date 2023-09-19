@@ -8,7 +8,7 @@ int main(){
     printf("Digite um ano para ser verificado:\n");
     scanf("%d", &ano);
 
-    if (ano >= 1896){
+    if (ano >= 1896 && ano <= 2022 && (ano - 1896) % 4 == 0){
         i = 1896;
         while (i <= 2022){
             if (ano == i){
@@ -16,7 +16,7 @@ int main(){
             }
             i = i + 4;
         }
-        
+    }else if(ano >= 1930 && ano <= 2022 && (ano - 1930) % 4 == 0){
         i = 1930;
         while (i <= 2022){
             if (ano == i){
