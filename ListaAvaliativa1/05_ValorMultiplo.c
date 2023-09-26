@@ -6,7 +6,7 @@ int main(){
     int n1, n2;
 
     // printf("Digite dois valores:\n");
-    scanf("%d\n", &n1);
+    scanf("%d", &n1);
     scanf("%d", &n2);
 
     if (n1 == n2){
