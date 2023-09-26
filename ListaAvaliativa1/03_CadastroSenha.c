@@ -3,34 +3,30 @@
 #include <stdlib.h>
 
 int main(){
-    int senha, senha2, i = 0;
+    int s1, s2, i = 0;
 
-    printf("Cadastre uma senha:\n");
-    scanf("%d", &senha);
+    // printf("Cadastre uma senha:\n");
+    scanf("%d", &s1);
 
     while(i != 1){
-        if(senha >= 0000 && senha <=9999){
-            printf("Senha Cadastrada: %d\n", senha);
-                while(senha2 != senha){
-                printf("Digite a senha cadastrada:\n");
-                scanf("%d", &senha2);
-                    if(senha2 == senha){
-                        printf("Senha Valida!\n");
+        if(s1 >= 0000 && s1 <=9999){
+            printf("senha cadastrada: %d", s1);
+                while(s2 != s1){
+                // printf("Digite a senha cadastrada:\n");
+                scanf("%d", &s2);
+                    if(s2 == s1){
+                        printf("senha valida!");
                     }else{
-                        printf("Senha Invalida!\n");
+                        printf("senha invalida!");
                     }
                 } 
             i++;
         }else{
-            printf("Senha não aceita!\n");
-            printf("Cadastre uma senha:\n");
-            scanf("%d", &senha);
+            // printf("Senha não aceita!\n");
+            // printf("Cadastre uma senha:\n");
+            scanf("%d", &s1);
         }
     }
-        
-    
-
-    
 
     return 0;
 }

@@ -5,7 +5,7 @@
 int main(){
     int n, n2, soma;
 
-    printf("Digite um numero que sera verificado\n");
+    // printf("Digite um numero que sera verificado\n");
     scanf("%d", &n);
 
     if(n % 2 == 0){

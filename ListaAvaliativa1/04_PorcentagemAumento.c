@@ -6,10 +6,10 @@ int main(){
     char experiencia;
     double salario;
 
-    printf("Digite o nivel de experiencia do funcionario:\n");
+    // printf("Digite o nivel de experiencia do funcionario:\n");
     scanf("%c", &experiencia);
 
-    printf("Digite o salario do funcionario:\n");
+    // printf("Digite o salario do funcionario:\n");
     scanf("%lf", &salario);
 
     if(experiencia == 'a'){
