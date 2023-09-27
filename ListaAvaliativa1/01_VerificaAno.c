@@ -12,7 +12,7 @@ int main(){
         i = 1896;
         while (i <= 2022){
             if (ano == i){
-                printf("Os Jogos Olímpicos de Verao ocorreram no ano de %d.\n", ano);
+                printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", ano);
             }
             i = i + 4;
         }
@@ -25,7 +25,7 @@ int main(){
             i = i + 4;
         }
     }else{
-        printf("Nao houve Jogos Olímpicos de Verao ou Copa do Mundo no ano de %d.\n", ano);
+        printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", ano);
     }
  
    return 0;
