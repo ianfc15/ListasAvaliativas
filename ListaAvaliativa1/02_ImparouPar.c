@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main(){
-    int n, n2, soma;
+    int n, n2, soma = 0;
 
     // printf("Digite um numero que sera verificado\n");
     scanf("%d", &n);
