@@ -22,7 +22,7 @@ int main(){
         for(j = 0; j <= a; j++){
             soma = n[j] + n[j + 1];
             n[j] = soma;
-            printf("%d ", n[j]);
+            printf(" %d", n[j]);
         }
         printf("\n");
         a--;     

@@ -75,10 +75,6 @@ int main(){
     }else{
         printf("\n Operacao nao suportada");
     }
-
     
-
-
-
     return 0;
 }
