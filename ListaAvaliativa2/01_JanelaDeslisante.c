@@ -17,15 +17,14 @@
 
         // Parte da repeticao
 
+        int tamanhoConjunto = 0;
+
         int a = 8;
         for(i = 0; i <= 9; i++){
             for(j = 0; j <= a; j++){
                 soma = n[j] + n[j + 1];
                 n[j] = soma;
                 printf("%d", n[j]);
-                if(a != 2){
-                    printf(" ");
-                }
             }
             printf("\n");
             a--;     
