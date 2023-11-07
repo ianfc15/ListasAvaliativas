@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main() {
-    char nomeJogador1[10][30], nomeJogador2[10][30], nomeTime1[10][30], nomeTime2[10][30], posicao;
+    char nomeJogador1[10][30], nomeJogador2[10][30], nomeTime1[30], nomeTime2[30], posicao;
     int nivelForca = 0;
     double forcaTime1 = 0, forcaTime2 = 0;
 
-    fgets(nomeTime1, 30, stdin);
+    // fgets(nomeTime1, 30, stdin);
+    fflush(stdin);
+    scanf("%[^\n]", nomeTime1);
 
     for (int i = 0; i < 11; i++) {
         scanf("%40[^;];%c;%d", nomeJogador1[i], &posicao, &nivelForca);
@@ -27,7 +28,9 @@ int main() {
         }
     }
 
-    fgets(nomeTime2, 30, stdin);
+    // fgets(nomeTime2, 30, stdin);
+    fflush(stdin);
+    scanf("%[^\n]", nomeTime2);
 
     for (int i = 0; i < 11; i++) {
         scanf("%40[^;];%c;%d", nomeJogador2[i], &posicao, &nivelForca);
