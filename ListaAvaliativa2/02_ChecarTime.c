@@ -8,7 +8,6 @@ int main() {
     double forcaTime1 = 0, forcaTime2 = 0;
 
     // fgets(nomeTime1, 30, stdin);
-    fflush(stdin);
     scanf("%[^\n]", nomeTime1);
 
     for (int i = 0; i < 11; i++) {
@@ -29,11 +28,10 @@ int main() {
     }
 
     // fgets(nomeTime2, 30, stdin);
-    fflush(stdin);
-    scanf("%[^\n]", nomeTime2);
+    scanf(" %[^\n]", nomeTime2);
 
     for (int i = 0; i < 11; i++) {
-        scanf("%40[^;];%c;%d", nomeJogador2[i], &posicao, &nivelForca);
+        scanf(" %40[^;];%c;%d", nomeJogador2[i], &posicao, &nivelForca);
         if(posicao == 'G'){
             forcaTime2 += 8 * nivelForca;
         }else if(posicao == 'L'){
